@@ -3,12 +3,14 @@ import streamlit as st
 import os
 import google.generativeai as genai
 
+#Testing
+
 load_dotenv()
 
 
 # Set up the GEMINI API MODEL
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=AIzaSyAhIOrkXfbcD_LP0uhxoDIYbjy8MMTTarA)
+genai.configure(api_key='AIzaSyAhIOrkXfbcD_LP0uhxoDIYbjy8MMTTarA')
 model = genai.GenerativeModel('gemini-pro')
 
 # function to translate roles between Gemini-pro and streamlit
